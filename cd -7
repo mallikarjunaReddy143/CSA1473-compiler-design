@@ -41,10 +41,10 @@ addToResultSet(Result,c); return ;
 //Find production with X as LHS if(productionSet[i][0]==c)
 {
 //If X ? ? is a production, then add ? to FIRST(X). if(productionSet[i][2]=='$') addToResultSet(Result,'$');
-//If X is a non-terminal, and X ? Y1 Y2 … Yk
+//If X is a non-terminal, and X ? Y1 Y2 â€¦ Yk
 //is a production, then add a to FIRST(X)
 //if for some i, a is in FIRST(Yi),
-//and ? is in all of FIRST(Y1), …, FIRST(Yi-1). else
+//and ? is in all of FIRST(Y1), â€¦, FIRST(Yi-1). else
 {
 j=2;
 while(productionSet[i][j]!='\0')
